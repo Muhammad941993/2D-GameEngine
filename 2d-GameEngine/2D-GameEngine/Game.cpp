@@ -69,8 +69,12 @@ void Game::HandleEvents()
 
 void Game::Update()
 {
+	cnt++;
+	std::cout << "Count: " << cnt << std::endl;
 	destRect.h = 64;
 	destRect.w = 64;
+
+	destRect.x = cnt;
 }
 
 void Game::Render()
