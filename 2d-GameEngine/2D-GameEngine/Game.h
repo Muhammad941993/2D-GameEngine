@@ -18,12 +18,14 @@ public:
 	void Clean();
 	bool Running() { return isRunning; }
 
+	static SDL_Renderer* renderer;
+
+
 private:
 
 	int cnt = 0;
 	bool isRunning;
 	SDL_Window* window;
-	SDL_Renderer* renderer;
 
 };
 
